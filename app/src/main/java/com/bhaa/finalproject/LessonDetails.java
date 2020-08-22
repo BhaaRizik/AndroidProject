@@ -472,26 +472,7 @@ else {
     ArrayList<Lesson> lessons=new ArrayList<>();
 
     RecyclerView recyclerView;
-   /* public void showAllLessons(View view) {
-
-        recyclerView=(RecyclerView)findViewById(R.id.listOfLessons);
-
-        Query query = lessonRef.orderBy("date", Query.Direction.DESCENDING);
-        final FirestoreRecyclerOptions<Lesson> options = new FirestoreRecyclerOptions.Builder<Lesson>()
-                .setQuery(query,Lesson.class)
-                .build();
-
-        upload(new lessonDetails() {
-
-            @Override
-            public void LessonIsLoad(List<Lesson> lessons, List<String> keys) {
-                new RecyclerView_show_Lessons().
-                        setConfig(recyclerView,LessonDetails.this,lessons,keys,options,mDatabase);
-            }
-        });
-
-    }*/
-
+   
 
     public void upload(final lessonDetails lessonDetail){
         mDatabase.addValueEventListener(new ValueEventListener() {
